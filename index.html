@@ -12,8 +12,70 @@
   <div class="jumbotron">
     <h1 class="display-4">AWS Dashboard</h1>
   </div>
+
   <div class="container">
-    <h1>Step 2: select services</h1>
+    <h1>Step 1: Select CloudWatch metrics</h1>
+    <hr>
+    <form>
+      <div class="form-group row">
+        <div class="col-sm-3">Region</div>
+        <div class="col-sm-9">
+          <select class="custom-select">
+            <option selected value="1">us-east-1</option>
+            <option value="2">us-west-1</option>
+            <option value="3">us-west-2</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">Service</div>
+        <div class="col-sm-9">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Kinesis">
+            <label class="form-check-label" for="Kinesis">
+              Kinesis
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Firehose">
+            <label class="form-check-label" for="Firehose">
+              Firehose
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Analytics">
+            <label class="form-check-label" for="Analytics">
+              Firehose
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">Metric</div>
+        <div class="col-sm-9">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="IncomingRecords">
+            <label class="form-check-label" for="IncomingRecords">
+              IncomingRecords
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="IncomingBytes">
+            <label class="form-check-label" for="IncomingBytes">
+              IncomingBytes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="ReadProvisionedThroughputExceeded">
+            <label class="form-check-label" for="ReadProvisionedThroughputExceeded">
+              ReadProvisionedThroughputExceeded
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <h1>Step 2: Select services</h1>
     <hr>
     <div class="row align-items-start">
       <div class="col">
