@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.232.1",
-    "dotenv": "^5.0.1"
+    "dotenv": "^5.0.1",
+    "electron-tabs": "^0.9.1"
   }
 }
